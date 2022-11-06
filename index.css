@@ -1,0 +1,165 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/pattern-background-desktop.svg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background: var(--Very-pale-blue);
+    width: 30%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    background: url(images/illustration-hero.svg);
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 220px;
+}
+
+.textos p, h3{
+    margin: 20px;
+    text-align: center;
+}
+
+.textos h3{
+    color: var(--Dark-blue);
+}
+
+.textos p{
+    color: var(--Desaturated-blue);
+}
+
+.annual{
+    background: var(--Pale-blue);
+    padding: 15px;
+    border-radius: 12px;
+    width: 65%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-annual h4{
+    color: var(--Dark-blue);
+}
+
+.text-annual p{
+    color: var(--Desaturated-blue);
+}
+
+.annual a{
+    color: var(--Bright-blue);
+}
+
+.annual a:hover{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.pay{
+    width: 80%;
+}
+
+.pay button{
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    margin: 5px;
+    font-size: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.pay button:hover{
+    background-color: var(--Desaturated-blue);
+}
+
+.cancel a{
+    color: var(--Desaturated-blue);
+    margin: 20px;
+    text-decoration: none;
+}
+
+.cancel a:hover{
+    color: var(--Dark-blue);
+}
+
+@media screen and (max-width:1200px){
+    .annual{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:980px){
+    .card{
+        width: 60%;
+    }
+
+    .annual{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .card{
+        width: 80%;
+    }
+
+    .annual{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .card{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .banner{
+        border-radius: 0;
+    }
+
+    .annual{
+        width: 85%;
+    }
+}
